@@ -1,0 +1,37 @@
+export const logo=[
+    {
+        image:"/photo/abstract-letter.png",
+        name:"",
+        href:"/"
+    },
+    {
+        image:"/photo/abstract-letter.png",
+        name:"",
+        href:"/"
+    },
+    {
+        image:"/photo/abstract-letter.png",
+        name:"",
+        href:"/"
+    },
+    {
+        image:"/photo/abstract-letter.png",
+        name:"",
+        href:"/"
+    },
+    {
+        image:"/photo/abstract-letter.png",
+        name:"",
+        href:"/"
+    },
+    {
+        image:"/photo/abstract-letter.png",
+        name:"",
+        href:"/"
+    },
+    {
+        image:"/photo/abstract-letter.png",
+        name:"",
+        href:"/"
+    },
+]

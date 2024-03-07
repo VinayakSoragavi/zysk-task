@@ -1,0 +1,22 @@
+export const menu=[
+    {
+        name:"HOME",
+        href:"/"
+    },
+    {
+        name:"ABOUT",
+        href:"/"
+    },
+    {
+        name:"SERVICES",
+        href:"/"
+    },
+    {
+        name:"GALLERY",
+        href:"/"
+    },
+    {
+        name:"CONTACT",
+        href:"/"
+    },
+]
