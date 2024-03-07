@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 import { menu } from "../data/menu";
 import MenuIcon from "@mui/icons-material/Menu";
+import { useProvideContext } from "../context/Context";
 
 const Header: React.FC = () => {
   const [display, setDisplay] = useState<boolean>(false);
@@ -22,6 +23,11 @@ const Header: React.FC = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  const context = useProvideContext();
+  if (!context) {
+    return <></>;
+  }
+  const { setMenubar } = context;
   return (
     <>
       <header className={`w-full fixed z-50 ${display ? "bg-white" : ""}`}>
@@ -33,7 +39,7 @@ const Header: React.FC = () => {
                   alt="logo"
                   height={100}
                   width={100}
-                  src="/photo/zysk.png"
+                  src="/photo/abstract-letter.png"
                 />
               </div>
               <div className="h-full flex items-center">
@@ -56,11 +62,16 @@ const Header: React.FC = () => {
                     })}
                   </li>
                 </ul>
-                <MenuIcon
-                  className={`p-1 text-5xl md:hidden ${
+                <div
+                  className={`p-1 md:hidden ${
                     display ? "text-black" : "text-white"
                   }`}
-                />
+                  onClick={() => {
+                    setMenubar(true);
+                  }}
+                >
+                  <MenuIcon className="text-5xl" />
+                </div>
               </div>
             </div>
           </div>

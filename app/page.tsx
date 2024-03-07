@@ -11,10 +11,12 @@ import Subinfo from "./components/Sub-Info";
 import Testimonial from "./components/Testimonial";
 import Footer from "./components/Footer";
 import Callbox from "./components/Call-box";
+import Headermobile from "./components/mobile/Headermobile";
 
 export default function Home() {
   return (
     <>
+      <Headermobile />
       <Navbar />
       <Banner />
       <About />
