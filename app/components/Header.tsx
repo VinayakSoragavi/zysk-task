@@ -50,7 +50,7 @@ const Header: React.FC = () => {
                       return (
                         <>
                           <Link
-                            className={`font-medium py-2 px-5 text-white ${
+                            className={`font-medium py-2 px-5 ${
                               display ? "text-black" : "text-white"
                             }`}
                             href={href}
