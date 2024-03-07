@@ -40,7 +40,7 @@ const Headermobile: React.FC = () => {
               src="/photo/abstract-letter.png"
             />
           </div>
-          <div style={{ backgroundColor: "#fafafa" }} className="w-full">
+          <div style={{ backgroundColor: "#fafafa" }} className="w-full h-full">
             <div className="pt-5 px-3 w-full">
               <h5 className="text-lg font-medium text-green-600">Dashbord</h5>
               {menu.map((elem, i) => (

@@ -56,8 +56,8 @@ const Footer: React.FC = () => {
                 </h6>
                 <div className="flex justify-center">
                   <ul className="flex">
-                    {...Array(4).map((index) => (
-                      <li key={index}>
+                    {menu.map((index, i) => (
+                      <li key={i}>
                         <a href="">
                           <FacebookIcon className="text-white p-1 text-4xl" />
                         </a>

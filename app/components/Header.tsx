@@ -22,7 +22,7 @@ const Header: React.FC = () => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [display]);
   const context = useProvideContext();
   if (!context) {
     return <></>;
